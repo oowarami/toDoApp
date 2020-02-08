@@ -1,0 +1,9 @@
+story
+
+use in-memory storage(array).
+
+- user can create a todo - Wai
+- user can edit a todo - Joe
+- user can delete a todo - Joe
+- user can mark todo as done(once done it goes to the bottom) - Wai
+
