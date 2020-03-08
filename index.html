@@ -6,28 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To Do App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="container">
-        <div id="header">
-            <div id="date"> </div>
-        </div>
-        <div id="content">
-            <ul id="newList">
-                <li id="listItem">
-                    <p id="complete"> </p>
-                    <p id="text"> </p>
-                    <p id="delete"> </p>
-                </li>
-            </ul>
-            <div id="addItem">
-                <i></i>
-                <input type="text" id="input" placeholder="Add a new list">
+    <div class="container">
+        <!-- start of header -->
+        <div class="header">
+            <div>
+                <img src="" alt="">
             </div>
-
+            <div>
+                <p id="date"> Today's Date</p>
+            </div>
         </div>
+        <!-- end of header -->
+
+        <!-- start of add to do button -->
+        <button id="modalBtn" class="button">Add To Do</button>
+        <!-- end of add to do button -->
+
+        <!-- start of main to do -->
+        <div class="main" id="mainTodo">
+            <!-- <div class="todo-item" id="todoItem">
+                <h3> This is the title of my to do</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas deserunt, et deleniti enim, doloribus qui corporis nemo voluptatem eaque rem ipsa culpa neque ipsam asperiores a perspiciatis est ut.</p>
+            </div>
+            <div class="todo-item" id="todoItem">
+                <h3> This is the title of my to do</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas deserunt, et deleniti enim, doloribus qui corporis nemo voluptatem eaque rem ipsa culpa neque ipsam asperiores a perspiciatis est ut.</p>
+            </div>
+            <div class="todo-item" id="todoItem">
+                <h3> This is the title of my to do</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quas deserunt, et deleniti enim, doloribus qui corporis nemo voluptatem eaque rem ipsa culpa neque ipsam asperiores a perspiciatis est ut.</p>
+            </div> -->
+        </div>
+        <!-- end of main to do -->
+
+        <!-- start of pop up modal -->
+        <div id="modal" class="modal">
+            <form class="modal-form">
+                <title> Add To do </title>
+                <input id="todo-title" class="modal-title" type="text" placeholder="Title"> <br>
+                <span class="closeBtn" id="closeBtn">&times;</span>
+                <textarea id="todo-content" cols="30" rows="10" placeholder="write your list item"></textarea> <br>
+                <button class="button" id="save">Save</button>
+                <button class="button">Edit</button>
+            </form>
+        </div>
+
+        <!-- end of pop up modal -->
     </div>
+    <script src="createToDo.js"></script>
 </body>
 
 </html>
